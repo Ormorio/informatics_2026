@@ -7,10 +7,10 @@ del(a[0])
 a.sort()
 print(a, n)
 
-b = 0
-for b in range(len(a)):
-    if a[b] == b:
-        b += 1
+c = 0
+for b in a:
+    if b == c:
+        c += 1
     else:
-        print(b)
+        print(c)
         break
