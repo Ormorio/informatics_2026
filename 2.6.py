@@ -1,2 +1,2 @@
 s = input("Введите строку: ").split()
-print(*(s[-1:] + s[:-1]))
+print(*(x for x in s if s.count(x) == 1))
