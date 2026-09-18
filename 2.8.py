@@ -7,6 +7,6 @@ for i in s:
         if int(j) < int(i):
             m += 1
 
-    if m == N // 2:
+    if m - s.count(i) + 1 <= N // 2 <= m + s.count(i) - 1:
         print(i)
         break
