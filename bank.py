@@ -1,7 +1,7 @@
-W = 4
-n = 3
-p = [1, 2, 3]
-w = [1, 2, 3]
+W = 45
+n = 6
+p = [1, 2, 3, 5, 8, 90]
+w = [1, 2, 3, 7, 19, 100]
 P = [[0 for j in range(W + 1)] for i in range(n + 1)]
 sp = []
 
@@ -14,7 +14,7 @@ for k in range(1, n + 1):
 
 S = W
 k = n
-while k >= 0:
+while k > 0:
     if P[k][S] != P[k - 1][S]:
         sp.append(k)
         S -= w[k - 1]
